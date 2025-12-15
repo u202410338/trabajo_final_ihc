@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reportar Mascotas</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">PAU-Mascotas a Salvo</div>
+            <ul class="nav-right">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#" class="active">Reportar Mascota</a></li>
+                <li><a href="buscar_mascota.html">Buscar Mascota</a></li>
+                <li><a href="comunidad_y_rescatistas.html">Comunidad y Rescatistas</a></li>
+                <li><a href="consejos_y_prevencion.html">Consejos y Prevención</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Seccion buscador-->
+    <section id="contact" class="contact">
+        <h2>Reportar Mascotas perdidas/encontradas</h2>
+        <br>
+        <div id="mensajeExito" class="mensaje-exito">¡Mensaje enviado con éxito!</div>
+        <form id="formContacto">
+            <div class="form-row">
+                <input type="text" placeholder="Ingresar nombre completo de la mascota..." required>
+            </div>
+            <button type="submit" class="btn-enviar">Reportar mascota perdida</button>
+            <button type="submit" class="btn-enviar">Reportar mascota encontrada</button>
+        </form>
+    </section>
+    <!-- MODAL -->
+    <div id="modalConfirmacion" class="modal-confirm" style="display:none;">
+        <div class="modal-contenido">
+            <h3>¡Gracias por reportar!</h3>
+            <p>Tu reporte ha sido registrado correctamente.</p>
+            <button id="btnAceptar">Aceptar</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

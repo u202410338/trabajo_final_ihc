@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos y Prevención</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">PAU-Mascotas a Salvo</div>
+            <ul class="nav-right">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar_mascota.html">Reportar Mascota</a></li>
+                <li><a href="buscar_mascota.html">Buscar Mascota</a></li>
+                <li><a href="comunidad_y_rescatistas.html">Comunidad y Rescatistas</a></li>
+                <li><a href="#" class="active">Consejos y Prevención</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- TEXTO PRINCIPAL-->
+    <section>
+        <h2>
+            Guía para festividades, cuidado y seguridad
+        </h2>
+    </section>
+    <!-- CONTENIDOS -->
+    <section id="content" class="content">
+        <ul class="grid">
+            <li>
+                <i class="fas fa-book"></i>
+                <h4>11/06 Día internacional del perro</h4>
+                <p>Festividad, no olvidar saludar a sus perros</p>
+            </li>
+            <li>
+                <i class="fas fa-book"></i>
+                <h4>18/02 Dia internacional de los gatos</h4>
+                <p>Festividad, no olvidar saludar a sus gatos</p>
+            </li>
+            <li>
+                <i class="fas fa-book"></i>
+                <h4>29/09 Dia internacional de los veterinarios</h4>
+                <p>Festividad, no olvidar saludar a sus veterinarios</p>
+            </li>
+            <!-- ÍTEM 3 ACTUALIZADO COMPLETO -->
+            <li class="legal-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h4>Comida prohibida para perros: Chocolate</h4>
+                <p>El chocolate daña el higado de los perros</p>
+                <button class="btn-articulos" onclick="toggleArticulos()">Ver artículos de expertos</button>
+                <div id="listaArticulos" class="articulos" style="display:none;">
+                    <div class="art-card">
+                        <h5>Peligros del chocolate en los perros</h5>
+                        <p>Una de las causas mas comunes en urgencias para perros es el chocolate. Esto se debe a que ...</p>
+                        <a href="#" class="leer-mas">Leer artículo</a>
+                    </div>
+                </div>
+            </li>
+            <li class="legal-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h4>Comida prohibida para perros: Palta</h4>
+                <p>La palta daña el intestino los perros</p>
+                <button class="btn-articulos" onclick="toggleArticulos()">Ver artículos de expertos</button>
+            </li>
+            <li class="legal-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h4>Comida prohibida para perros: Leche</h4>
+                <p>Solo si son intolerantes a la lactosa</p>
+                <button class="btn-articulos" onclick="toggleArticulos()">Ver artículos de expertos</button>
+            </li>
+        </ul>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
